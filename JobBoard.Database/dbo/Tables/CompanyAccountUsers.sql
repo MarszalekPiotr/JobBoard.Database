@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[CompanyAccountUsers]
 (
 	[Id]  INT IDENTITY(1,1) NOT NULL,
-	[CompanyAccountId] INT NOT NULL,
+	[CompanyAccountId] UNIQUEIDENTIFIER NOT NULL,
 	[UserId] INT NOT NULL,
 	CONSTRAINT [PK_CompanyAccountUsers] PRIMARY KEY CLUSTERED ([Id] ASC),
 	CONSTRAINT [FK_CompanyAccountUsers_CompanyAccounts] FOREIGN KEY ([CompanyAccountId]) REFERENCES [dbo].[CompanyAccounts] ([Id]) ON DELETE CASCADE,
