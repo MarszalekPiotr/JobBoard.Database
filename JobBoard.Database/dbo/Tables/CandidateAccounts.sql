@@ -5,6 +5,7 @@
     [SurName] NVARCHAR(100) NOT NULL,
     [PhoneNumber] NVARCHAR(50),
     [CreationDate] DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+    [BirthDate] DATETIMEOFFSET NOT NULL,
     [Description] NVARCHAR(2000),
     [ContactEmail] NVARCHAR(200),
     [UserId] INT NOT NULL,
