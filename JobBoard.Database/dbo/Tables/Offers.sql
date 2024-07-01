@@ -15,7 +15,7 @@
 
 	CONSTRAINT [PK_Offers] PRIMARY KEY CLUSTERED ([Id] ASC)
 	CONSTRAINT [FK_Offers_CompanyAccountId] FOREIGN KEY ([CompanyAccountId]) REFERENCES [dbo].[CompanyAccounts] ([Id]) ON DELETE CASCADE 
-	---CONSTRAINT [FK_Offers_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [dbo].[Categories] ([Id]) ON DELETE CASCADE 
+	CONSTRAINT [FK_Offers_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [dbo].[Categories] ([Id]) ON DELETE CASCADE 
 
 	
 )
