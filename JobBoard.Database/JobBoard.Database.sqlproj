@@ -71,5 +71,6 @@
     <Build Include="dbo\Tables\JobApplications.sql" />
     <Build Include="dbo\Tables\FormFillings.sql" />
     <Build Include="dbo\Tables\FieldFilling.sql" />
+    <Build Include="dbo\Tables\Cities.sql" />
   </ItemGroup>
 </Project>

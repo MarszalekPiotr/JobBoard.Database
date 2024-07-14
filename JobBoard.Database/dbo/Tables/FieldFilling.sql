@@ -6,7 +6,7 @@
 	[Value] NVARCHAR(1000) NOT NULL
 
 	CONSTRAINT [PK_FieldFillings] PRIMARY KEY CLUSTERED ([Id]),
-	CONSTRAINT [FK_FieldFillings_FormFillingId] FOREIGN KEY ([FormFillingId]) REFERENCES [dbo].[FormFillings]([Id])
+	CONSTRAINT [FK_FieldFillings_FormFillingId] FOREIGN KEY ([FormFillingId]) REFERENCES [dbo].[FormFillings]([Id]) ON DELETE CASCADE
 	
 	)
 	GO

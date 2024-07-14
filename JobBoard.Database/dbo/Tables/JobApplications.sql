@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[JobApplications]
 (
 	[Id] INT IDENTITY(1,1) NOT NULL,
-	[CandidateAccountId] UNIQUEIDENTIFIER NOT NULL,
+	[CandidateAccountId] INT NOT NULL,
 	[OfferId] INT NOT NULL,
 	[ApplicationDate] DATETIMEOFFSET NOT NULL,
 	[Status] NVARCHAR(100) NOT NULL,
