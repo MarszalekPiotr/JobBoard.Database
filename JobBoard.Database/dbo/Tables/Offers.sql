@@ -11,7 +11,8 @@
 	[WorkingMode] INT  NOT NULL,
 	[ContractType] INT NOT NULL,
 	[MinSalary] INT NULL,
-	[MaxSalary] INT NULL
+	[MaxSalary] INT NULL,
+	[OfferStatus] INT NOT NULL
 
 	CONSTRAINT [PK_Offers] PRIMARY KEY CLUSTERED ([Id] ASC)
 	CONSTRAINT [FK_Offers_CompanyAccountId] FOREIGN KEY ([CompanyAccountId]) REFERENCES [dbo].[CompanyAccounts] ([Id]) ON DELETE CASCADE 
